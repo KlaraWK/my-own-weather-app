@@ -1,3 +1,25 @@
+// Week 4 Feature #1
+
+let now = new Date();
+//let now = new Date("2021-01-01T09:03");
+let hours = (`0` + now.getHours()).slice(-2);
+let minutes = (`0` + now.getMinutes()).slice(-2); // 0+3 = 03, 0+11 = 011 -> nimm die letzten 2 -> 03 bzw 11
+
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+let day = days[now.getDay()];
+
+let today = document.querySelector("h2");
+today.innerHTML = `${day} ${hours}:${minutes}`;
+
+
 //Week 5 Feature #1
 
 function search(event) {
