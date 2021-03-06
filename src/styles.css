@@ -1,0 +1,85 @@
+body {
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 20px 0 0 0;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+h2 {
+  line-height: 1;
+  font-size: 1rem;
+  color: grey;
+  margin-left: 10px;
+}
+
+p {
+  line-height: 1;
+  font-size: 1rem;
+  color: grey;
+  margin-left: 10px;
+}
+
+form {
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -24px;
+}
+
+.card {
+  padding: 20px;
+}
+.fa-sun {
+  color: orange;
+}
+
+.fa-cloud {
+  color: lightgray;
+}
+
+.fa-cloud-rain {
+  color: lightskyblue;
+}
+
+.btn-secondary {
+  width: 100%;
+}
+
+.search {
+  margin: 0;
+}
+
+.highlight {
+  font-size: 50px;
+  margin: 0 0 36px 0;
+}
+
+.weekdays {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 -3px;
+}
+
+.weekday {
+  padding: 20px 0;
+  margin: 3px;
+}
+
+.day-icon {
+  font-size: 30px;
+}
+
+.current {
+  background-color: #95999c;
+}
