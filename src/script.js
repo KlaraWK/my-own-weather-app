@@ -19,6 +19,28 @@ let day = days[now.getDay()];
 let today = document.querySelector("h2");
 today.innerHTML = `${day} ${hours}:${minutes}`;
 
+//Feature #2
+
+let currentTemp = Math.round(response.data.main.temp);;
+
+function followCel(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#temperature");
+  temp.innerHTML = currentTemp;
+}
+
+function followFar(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#temperature");
+  temp.innerHTML = Math.round((currentTemp * 9) / 5 + 32);
+}
+
+let followCelLink = document.querySelector("#celsius-link");
+followCelLink.addEventListener("click", followCel);
+
+let followFahrLink = document.querySelector("#fahrenheit-link");
+followFahrLink.addEventListener("click", followFar);
+
 
 //Week 5 Feature #1
 
